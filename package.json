@@ -1,0 +1,25 @@
+{
+  "name": "toy-svelte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ubun21/toy-svelte.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ubun21/toy-svelte/issues"
+  },
+  "homepage": "https://github.com/Ubun21/toy-svelte#readme",
+  "dependencies": {
+    "acron": "^1.0.5",
+    "code-red": "^0.2.5"
+  }
+}
