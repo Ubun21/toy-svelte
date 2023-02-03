@@ -1,4 +1,5 @@
 import { fragment } from './state/fragment.js'
+import * as code_red from 'code-red'
 
 let state = fragment
 const regex_whitespace = /\s/
@@ -72,11 +73,15 @@ class Parser{
   }
 }
 
-const str = `
+const source = `
 <script>
 let count = 0
+let handleClick = () => {
+  count += 1
+}
 </script>
-<button>{count}</button>
+<button on:click={handleClick}>{count}</button>
 `
-const parser = new Parser(str)
-console.info(parser.js)
+
+const parser = new Parser(source)
+console.info(parser.html)
